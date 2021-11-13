@@ -123,7 +123,7 @@ void classifyImage() {
 
   buffer = "";
   // Uncomment this if you want to show the payload
-  Serial.println(payload);
+  //Serial.println(payload);
 
   esp_camera_fb_return(fb);
   
