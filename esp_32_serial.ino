@@ -18,7 +18,7 @@
 //Define software serial ports
 //Initialize softwareSerial
 #define TX 12
-#define RX 13
+#define RX 15
 SoftwareSerial mySerial;
 //Define files used as a replacement to camer_pins.h libraray
 #define PWDN_GPIO_NUM     32
@@ -43,12 +43,12 @@ const char* ssid = "JioFiber-3G";
 const char* password = "khuntiafamily";
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.setDebugOutput(true);
   Serial.println();
 
   //Software serial begin
-  mySerial.begin(9600,SWSERIAL_8N1,RX,TX,false);
+  mySerial.begin(9600,SWSERIAL_8N1,RX,TX);
 
   camera_config_t config;
   config.ledc_channel = LEDC_CHANNEL_0;
