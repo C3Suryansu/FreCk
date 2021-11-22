@@ -4,12 +4,12 @@ SoftwareSerial myPort(2, 3); // RX, TX
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
   myPort.begin(9600);
 }
 
   void loop()
 {
-  if (mySerial.available())
-    Serial.write(mySerial.read());
+  if (myPort.available())
+    Serial.write(myPort.read());
 }
