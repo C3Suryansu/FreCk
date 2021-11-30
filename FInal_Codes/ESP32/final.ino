@@ -149,7 +149,7 @@ float str_parse(String r_value)
   part1 = strtok (char_r_value," ");
   float aFloat = atof(strtok (NULL," "));  
   return aFloat;
-  Serial.println(aFloat); //For Debugging
+  //Serial.println(aFloat); //For Debugging
   //char_r_value = NULL;
   //part1 = NULL;
 }
