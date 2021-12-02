@@ -38,10 +38,10 @@ def scan():
         # slabel = np.argmax(res_arr)
         # if slabel == 0:
         #     status = "Fresh"
-        #     conf_score = res_arr[0]
+        #     conf_score = res_arr[0][0]
         # else:
         #     status = "Spoilt"
-        #     conf_score = res_arr[1]
+        #     conf_score = res_arr[0][1]
         
         return jsonify({"code":" 99.98"})
 
