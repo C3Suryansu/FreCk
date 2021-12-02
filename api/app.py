@@ -15,9 +15,10 @@ def scan():
         # decodeit = open('./static/img.jpeg', 'wb')
         # decodeit.write(base64.b64decode((byte)))
         # decodeit.close()
-        return jsonify({"code":" 99.98"})
+        return jsonify(99.98)
 
     return jsonify({'flevel':"0"})
 
 if __name__ == '__main__':
     app.run()
+
